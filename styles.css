@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0.25rem;
+  margin: 0;
+  display: flex;
+
+  height: 100svh;
+  height: 100vh;
+}
+
+body, main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main > div {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+canvas {
+  width: 100% !important;
+  flex: 1;
+  object-fit: contain;
+
+  /* image-rendering: crisp-edges;
+  image-rendering: pixelated; */
+}
